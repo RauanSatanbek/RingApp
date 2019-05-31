@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tasks_list_item_bg"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp">
+
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/ava_1"
+            android:id="@+id/imageViewAva"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            android:layout_marginStart="16dp"/>
+
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_call_cancel"
+            android:background="@drawable/cancel_call"
+            android:id="@+id/cancelCall"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" tools:ignore="VectorDrawableCompat"/>
+
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_call_in"
+            android:background="@drawable/accept_call"
+            android:id="@+id/acceptCall"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" tools:ignore="VectorDrawableCompat"/>
+
+    <TextView
+            android:id="@+id/name"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:text="Павел"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewAva"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="3dp"
+            android:textSize="12sp"
+            android:textColor="@color/textColor"/>
+
+    <TextView
+            android:id="@+id/title"
+            android:text="@string/cancel_call"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewAva"
+            android:layout_marginStart="20dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_subtract"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/time"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+            tools:ignore="VectorDrawableCompat"/>
+
+    <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 min"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/textColor"/>
+
+
+    <ImageView
+            android:id="@+id/flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/kazakh_flag"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintStart_toEndOf="@+id/imageViewAva"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"/>
+
+    <TextView
+            android:id="@+id/operatorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kazakhstan  TELE2"
+            android:textSize="14dp"
+            android:textColor="#999"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintStart_toEndOf="@+id/flag"
+            android:layout_marginStart="14dp"/>
+
+    <TextView
+            android:id="@+id/sendDataText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kazakhstan  TELE2"
+            android:textSize="14dp"
+            android:textColor="#999"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintStart_toEndOf="@+id/imageViewAva"
+            android:layout_marginStart="20dp"/>
+
+    <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.33 $"
+            android:background="@drawable/task_item_money"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="12dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorPurple"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"/>
+    <LinearLayout
+            android:id="@+id/more"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/money"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewAva"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="В течение действия таймера совершите звонок. Пользователь уже готов ответить. Не более 20 с"
+            android:textSize="15dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Вызвать"
+            android:drawableStart="@drawable/ic_call"
+            android:drawablePadding="16dp"
+            android:background="@drawable/task_item_call_btn"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

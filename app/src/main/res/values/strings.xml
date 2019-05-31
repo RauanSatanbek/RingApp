@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RingApp</string>
+    <string name="title_blocker">Blocker</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="all_tasks">Все задачи</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="auto_complete">Автоматически выполнять входящие задачи</string>
+    <string name="cancel_call">Сбросить звонок</string>
+    <string name="answer_call">Ответить на звонок</string>
+    <string name="call_with">Позвонить с ответом</string>
+    <string name="send_data">Отправить данные</string>
+    <string name="title">Задачи</string>
+</resources>
